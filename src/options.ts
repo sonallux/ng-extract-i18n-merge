@@ -22,5 +22,6 @@ export interface Options extends JsonObject {
     sort: 'idAsc' | 'stableAppendNew' | 'stableAlphabetNew',
     buildTarget: string | null,
     builderI18n: string | null,
-    verbose: boolean
+    verbose: boolean,
+    groups: Record<string, string | string[]> | null,
 }
